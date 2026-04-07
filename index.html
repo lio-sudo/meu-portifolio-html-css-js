@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | João Leonis</title>
+    <meta
+        name="description"
+        content="Portfólio de João Leonis, desenvolvedor web."
+    >
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="site-header">
+            <a class="brand" href="#topo">
+                <span class="brand-mark">JL</span>
+                <span class="brand-text">
+                    <strong>João Leonis</strong>
+                    <small>Dev Web</small>
+                </span>
+            </a>
+
+            <nav class="site-nav" aria-label="Principal">
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <main id="topo">
+            <section id="sobre" class="hero-section">
+                <div class="hero-copy">
+                    <p class="eyebrow">Portfólio pessoal</p>
+                    <h1>Interfaces simples, claras e prontas para funcionar bem em qualquer tela.</h1>
+                    <p class="hero-text">
+                        Sou João Leonis, estudante de Sistemas para a Internet pela UESPI. Este é o
+                        meu primeiro projeto e marca o início da minha jornada no desenvolvimento
+                        web.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#projetos">Ver projetos</a>
+                        <a class="button button-secondary" href="#contato">Falar comigo</a>
+                    </div>
+
+                    <ul class="hero-highlights" aria-label="Destaques profissionais">
+                        <li>HTML, CSS e JavaScript</li>
+                        <li>Foco em front-end e usabilidade</li>
+                        <li>Layouts responsivos</li>
+                    </ul>
+                </div>
+
+                <div class="hero-card">
+                    <img src="assets/img/perfil.jpg" alt="Foto de João Leonis">
+                    <div class="hero-card-content">
+                        <p class="hero-card-label">Disponível para</p>
+                        <h2>Projetos web e colaborações em tecnologia</h2>
+                        <p>
+                            Desenvolvimento com base sólida, boa comunicação e atenção especial à
+                            usabilidade no celular.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projetos" class="content-section">
+                <div class="section-heading">
+                    <p class="eyebrow">Trabalhos em destaque</p>
+                    <h2>Projetos</h2>
+                    <p>
+                        Cada card abaixo apresenta uma entrega com foco em clareza, funcionalidade
+                        e boa experiência de uso.
+                    </p>
+                </div>
+
+                <div class="projetos-container"></div>
+            </section>
+
+            <section id="contato" class="content-section contact-section">
+                <div class="section-heading">
+                    <p class="eyebrow">Vamos conversar</p>
+                    <h2>Contato</h2>
+                    <p>
+                        Se você quer tirar uma ideia do papel ou desenvolver uma solução para web,
+                        envie uma mensagem.
+                    </p>
+                </div>
+
+                <div class="contact-layout">
+                    <article class="contact-card">
+                        <h3>Como posso ajudar</h3>
+                        <p>
+                            Posso contribuir com páginas institucionais, portfólios, pequenos
+                            sistemas web e melhorias de interface para produtos digitais.
+                        </p>
+
+                        <ul class="contact-list">
+                            <li>Landing pages e sites pessoais</li>
+                            <li>Projetos acadêmicos e demonstrativos</li>
+                            <li>Melhorias de interface e responsividade</li>
+                        </ul>
+                    </article>
+
+                    <form action="#" method="post" id="meu-formulario" class="contact-form">
+                        <div class="campo">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="msg">Mensagem</label>
+                            <textarea id="msg" name="msg" required></textarea>
+                        </div>
+
+                        <button class="button button-primary submit-button" type="submit">
+                            Enviar mensagem
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 - Desenvolvido por João Leonis</p>
+        </footer>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
