@@ -327,10 +327,16 @@ textarea {
     margin-bottom: 1.2rem;
 }
 
+.card-links {
+    display: grid;
+    gap: 0.75rem;
+}
+
 .card-projeto a {
     display: inline-flex;
     align-items: center;
     gap: 0.45rem;
+    width: fit-content;
     color: var(--primary);
     font-weight: 700;
     text-decoration: none;

@@ -5,14 +5,28 @@ const meusProjetos = [
     {
         titulo: "Projeto 01 - Portfólio em HTML, CSS e JavaScript",
         descricao: "Este portfólio foi desenvolvido com HTML, CSS e JavaScript puro, com foco em estrutura, estilo e responsividade.",
-        link: "https://github.com/pedroalex/portfolio",
-        categoria: "Frontend"
+        categoria: "Frontend",
+        links: [
+            {
+                label: "Ver projeto",
+                url: "https://lio-sudo.github.io/meu-portifolio-html-css-js/#projetos"
+            },
+            {
+                label: "Ver repositório",
+                url: "https://github.com/lio-sudo/meu-portifolio-html-css-js"
+            }
+        ]
     },
     {
         titulo: "Projeto 02 - Portfólio com React",
         descricao: "Uma evolução deste mesmo projeto, mantendo a base visual e adicionando React para componentização e melhor organização da interface.",
-        link: "https://github.com/pedroalex/portfolio-react",
-        categoria: "React"
+        categoria: "React",
+        links: [
+            {
+                label: "Ver no GitHub",
+                url: "https://github.com/pedroalex/portfolio-react"
+            }
+        ]
     }
 ];
 
@@ -36,12 +50,22 @@ function renderizarProjetos() {
     containerProjetos.innerHTML = "";
 
     meusProjetos.forEach((projeto) => {
+        const linksHtml = projeto.links
+            .map(
+                (link) => `
+                    <a href="${link.url}" target="_blank" rel="noreferrer">${link.label}</a>
+                `
+            )
+            .join("");
+
         const cardHTML = `
             <article class="card-projeto">
                 <p class="eyebrow">${projeto.categoria}</p>
                 <h3>${projeto.titulo}</h3>
                 <p>${projeto.descricao}</p>
-                <a href="${projeto.link}" target="_blank" rel="noreferrer">Ver no GitHub</a>
+                <div class="card-links">
+                    ${linksHtml}
+                </div>
             </article>
         `;
 
