@@ -19,12 +19,16 @@ const meusProjetos = [
     },
     {
         titulo: "Projeto 02 - Portfólio com React",
-        descricao: "Uma evolução deste mesmo projeto, mantendo a base visual e adicionando React para componentização e melhor organização da interface.",
+        descricao: "Portfólio desenvolvido em React com componentes reutilizáveis, navegação moderna e interface responsiva.",
         categoria: "React",
         links: [
             {
-                label: "Ver no GitHub",
-                url: "https://github.com/pedroalex/portfolio-react"
+                label: "Ver projeto",
+                url: "https://lio-sudo.github.io/portfolio-com-react/"
+            },
+            {
+                label: "Ver repositório",
+                url: "https://github.com/lio-sudo/portfolio-com-react"
             }
         ]
     }
